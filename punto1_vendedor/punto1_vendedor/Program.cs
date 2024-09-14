@@ -15,6 +15,7 @@ Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el o
         //declarar variables
 
         Double sueldobase, comision1, comision2, comision3, venta1, venta2, venta3, totalcomisiones, totalmes, ventamayor, promediocomisiones, totalventas;
+        bool beneficioextra;
 
         //pedir datos por pantalla
 
@@ -50,7 +51,27 @@ Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el o
 
         // calcular si gano el veneficio estra
         totalventas = venta1 + venta2 + venta3;
+        beneficioextra = totalventas >= 1000000;
 
+        // mostrar resultados
+        Console.WriteLine("comision por la primera venta" + comision1);
+        Console.WriteLine("comision por la segunta venta" + comision2);
+        Console.WriteLine("comision por la tercera venta" + comision3);
+        Console.WriteLine("totalcomisiones en el mes" + totalcomisiones);
+        Console.WriteLine("total que recibira en el mes" + sueldobase + totalcomisiones);
+        Console.WriteLine("venta que genero mayor comisio" + ventamayor);
+        Console.WriteLine("promedio de las comisiones" + promediocomisiones);
+
+        // condicional para calcular si gano el beneficio o no
+
+        if (beneficioextra)
+        {
+            Console.WriteLine("felicidades gano el benecio estra");
+        }
+       else
+        {
+            Console.WriteLine("no gano el beneficio extra");
+        }
         
 
 
