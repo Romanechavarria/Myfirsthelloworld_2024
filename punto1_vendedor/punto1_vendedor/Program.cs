@@ -47,7 +47,7 @@ Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el o
         ventamayor = Math.Max(venta1, Math.Max(venta2, venta3));
 
         // calcular el promedio de las comisiones
-        promediocomisiones = comision1 + comision2 + comision3 / 3;
+        promediocomisiones = totalcomisiones / 3;
 
         // calcular si gano el veneficio estra
         totalventas = venta1 + venta2 + venta3;
@@ -58,7 +58,7 @@ Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el o
         Console.WriteLine("comision por la segunta venta" + comision2);
         Console.WriteLine("comision por la tercera venta" + comision3);
         Console.WriteLine("totalcomisiones en el mes" + totalcomisiones);
-        Console.WriteLine("total que recibira en el mes" + sueldobase + totalcomisiones);
+        Console.WriteLine("total que recibira en el mes" + (sueldobase + totalcomisiones));
         Console.WriteLine("venta que genero mayor comisio" + ventamayor);
         Console.WriteLine("promedio de las comisiones" + promediocomisiones);
 
