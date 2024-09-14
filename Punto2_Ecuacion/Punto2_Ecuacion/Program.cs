@@ -19,8 +19,7 @@ public class Program
         Console.Write("ingrese el coeficiente b ");
         b = Convert.ToDouble(Console.ReadLine());
 
-        Console.Write("ingrese el coeficiente x ");
-        x = Convert.ToDouble(Console.ReadLine());
+      
 
         // resolver la ecuacion
         if (a!= 0)
