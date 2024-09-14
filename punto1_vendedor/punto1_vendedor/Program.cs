@@ -9,12 +9,12 @@ public class Program
  ¿Cuál es el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones?
  ¿Cuál fue la venta que le generó la mayor comisión?
  ¿Cuál fue el promedio de las comisiones que recibió por cada venta?
-Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el objetivo del mes. El objetivo es sumar en las 3 ventas como
+Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el objetivo del mes. El objetivo es sumar en las 3 ventas como mínimo $1.000.000 en ventas. Mostrar un mensaje donde indique si ganó o no el beneficio.
         */
 
         //declarar variables
 
-        Double sueldobase, comisio1, comisio2, comision3, venta1, venta2, venta3;
+        Double sueldobase, comision1, comision2, comision3, venta1, venta2, venta3, totalcomisiones, totalmes, ventamayor, promediocomisiones, totalventas;
 
         //pedir datos por pantalla
 
@@ -29,6 +29,31 @@ Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el o
 
         Console.WriteLine("ingrese el valor de la venta3");
         venta3 = Convert.ToDouble(Console.ReadLine());
+
+        // calcular las comisiones
+
+        comision1 = venta1 * 0.10;
+        comision2 = venta2 * 0.10;
+        comision3 = venta3 * 0.10;
+        totalcomisiones = comision1 + comision2 + comision3;
+
+
+
+        // calcular el total que recibira en el mes
+        totalmes = sueldobase + totalcomisiones;
+
+        // determinar la venta que genero mayor ganancia
+        ventamayor = Math.Max(venta1, Math.Max(venta2, venta3));
+
+        // calcular el promedio de las comisiones
+        promediocomisiones = comision1 + comision2 + comision3 / 3;
+
+        // calcular si gano el veneficio estra
+        totalventas = venta1 + venta2 + venta3;
+
+        
+
+
 
 
 
