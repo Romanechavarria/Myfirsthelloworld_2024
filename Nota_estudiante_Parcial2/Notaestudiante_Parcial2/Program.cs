@@ -3,8 +3,15 @@
 public class Program
 {
     private static void Main(string[] args)
+
     {
+
+        // declarar variables
+
+
         bool continuar = true;
+
+        // calcular proceso
 
         while (continuar)
         {
