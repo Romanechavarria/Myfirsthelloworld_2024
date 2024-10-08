@@ -3,9 +3,16 @@
 public class Program
 {
     private static void Main(string[] args)
+
     {
+
+        // decalar variables
+
         bool continuar = true;  // controla si el juego se repite o no
+     
         Random random = new Random(); // para generar numeros aleatorios 
+
+        // realizar el proceso 
 
         while (continuar)  // reinicia el juego mientras que continuar siga siendo verdadero
         {
