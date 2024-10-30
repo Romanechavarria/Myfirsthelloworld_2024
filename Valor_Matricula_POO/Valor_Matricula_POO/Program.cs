@@ -34,7 +34,21 @@ Hacer uso de todos los elementos de programación que hemos visto hasta el momen
             Console.WriteLine("Ingrese el valor de un crédito:");
             decimal valorCredito = Convert.ToDecimal(Console.ReadLine());
 
-            
+            // Crear un objeto de la clase Estudiante
+            Estudiante estudiante = new Estudiante
+            {
+                Creditos = creditos,
+                Estrato = estrato,
+                ValorCredito = valorCredito
+            };
+
+            // Mostrar la información del costo de matrícula y subsidio
+            estudiante.MostrarInformacion();
+
+            // Preguntar al usuario si desea realizar otro cálculo
+            Console.WriteLine("\n¿Desea calcular la matrícula de otro estudiante? (S/N):");
+            string respuesta = Console.ReadLine().ToUpper();
+            continuar = respuesta == "S";
         }
 
 
