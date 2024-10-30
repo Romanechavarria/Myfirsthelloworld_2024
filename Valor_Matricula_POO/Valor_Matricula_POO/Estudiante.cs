@@ -44,6 +44,39 @@ namespace EjercicioMatrícula
             return costoMatricula;
         }
 
-        
+        // Método para calcular el subsidio
+        public decimal CalcularSubsidio()
+        {
+            decimal subsidio = 0;
+
+            // Calcular subsidio basado en el estrato
+            if (Estrato == 1)
+            {
+                subsidio = 200000;
+            }
+            else if (Estrato == 2)
+            {
+                subsidio = 100000;
+            }
+
+            return subsidio;
+        }
+
+        // Método para mostrar la información al usuario
+        public void MostrarInformacion()
+        {
+            decimal costoMatricula = CalcularCostoMatricula();
+            decimal subsidio = CalcularSubsidio();
+
+            Console.WriteLine($"\nEl costo de la matrícula es: ${costoMatricula}");
+            if (subsidio > 0)
+            {
+                Console.WriteLine($"El estudiante recibe un subsidio de alimentación y transporte de: ${subsidio}");
+            }
+            else
+            {
+                Console.WriteLine("El estudiante no recibe subsidio de alimentación y transporte.");
+            }
+        }
     }
 }
