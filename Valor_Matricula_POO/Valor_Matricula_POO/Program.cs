@@ -1,4 +1,6 @@
-﻿public class Program
+﻿using EjercicioMatrícula;
+
+public class Program
 {
     private static void Main(string[] args)
     {
@@ -16,6 +18,25 @@ Se debe informar al usuario sobre el costo de la matrícula y el valor del subsi
 La aplicación debe preguntar al usuario si quiere volver al inicio o no para calcular la matrícula de un nuevo estudiante.
 Hacer uso de todos los elementos de programación que hemos visto hasta el momento, incluyendoPOO (clases, propiedades, métodos)*/
 
-        
+        //solicitar datos al usuario
+
+        bool continuar = true;
+
+        while (continuar)
+        {
+            // Solicitar datos al usuario
+            Console.WriteLine("Ingrese el número de créditos del estudiante:");
+            int creditos = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el estrato del estudiante (1, 2, 3, etc.):");
+            int estrato = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el valor de un crédito:");
+            decimal valorCredito = Convert.ToDecimal(Console.ReadLine());
+
+            
+        }
+
+
     }
 }
