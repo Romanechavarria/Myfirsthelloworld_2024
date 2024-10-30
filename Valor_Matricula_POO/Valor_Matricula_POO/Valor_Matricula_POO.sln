@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valor_Matricula_POO", "Valor_Matricula_POO.csproj", "{72B39E9D-9DAF-4217-AF2C-EF31B76BBCEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72B39E9D-9DAF-4217-AF2C-EF31B76BBCEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B39E9D-9DAF-4217-AF2C-EF31B76BBCEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B39E9D-9DAF-4217-AF2C-EF31B76BBCEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B39E9D-9DAF-4217-AF2C-EF31B76BBCEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C0BFFA7-FE08-46EF-90AA-22F0AD9D1790}
+	EndGlobalSection
+EndGlobal
