@@ -110,6 +110,8 @@ public class Program
 
             // Mostrar la matriz actualizada después de cada movimiento
             DisplayMatrix(matrix);
+
+
         }
     }
 }
