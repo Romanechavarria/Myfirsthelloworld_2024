@@ -39,4 +39,29 @@ public class Program
         matrix[0, 0] = 0;
     }
 
+    private static void DisplayMatrix(int[,] matrix)
+    {
+        Console.Clear();
+
+        // Mostrar la matriz en consola
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                // Si estamos en la posición (0,0), pintamos en verde
+                if (i == 0 && j == 0)
+                {
+                   
+                    Console.Write($"{matrix[i, j]} ");
+                   
+                }
+                else
+                {
+                    Console.Write($"{matrix[i, j]} ");
+                }
+            }
+            Console.WriteLine();
+        }
+    }
+
 }
