@@ -22,5 +22,21 @@ public class Program
         WaitForExit(matrix, ref currentRow, ref currentCol);
     }
 
+    private static void FillMatrix(int[,] matrix)
+    {
+        Random random = new Random();
+
+        // Llenar la matriz con números aleatorios entre 1 y 9
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                matrix[i, j] = random.Next(1, 10); // Números aleatorios entre 1 y 9
+            }
+        }
+
+        // Asegurarse de que el número base en la posición (0,0) sea 0
+        matrix[0, 0] = 0;
     }
+
 }
